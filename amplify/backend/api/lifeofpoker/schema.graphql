@@ -1,0 +1,13 @@
+type GameRecord @model @auth(rules: [{ allow: public }]) {
+  gameDate: String!
+  gameType: GameType!
+  location: String!
+  tournamentPlace: String
+  cashIn: Float
+  cashOut: Float
+}
+
+enum GameType {
+  CASH
+  TOURNAMENT
+}

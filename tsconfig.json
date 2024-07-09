@@ -1,6 +1,10 @@
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "expo/tsconfig.base.json",
   "compilerOptions": {
     "strict": true
-  }
+  },
+  "include": [
+    "src",
+    "node_modules/@aws-amplify" // Ensure aws-amplify is included here
+  ]
 }
